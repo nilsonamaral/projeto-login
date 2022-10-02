@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="media-query.css">
 </head>
@@ -17,7 +18,20 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a). Faça login para acessar a sua conta, e fazer suas configurões de ambiente.</p>
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post">
+                    <div class="campo">                       
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="seu email" autocomplete="email" required maxlength="30">
+                        <label for="iemail">email</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="30">
+                        <label for="isenha">senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a senha <i class="material-icons">mail</i></a>
+                </form>
             </div>
         </section>
     </main>
